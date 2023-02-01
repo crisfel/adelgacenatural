@@ -13,7 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     </head>
-    <body style="background-image: url('https://transacciones.asparecargas.net/assets/img/background-nature.jpg') ; background-position: center; background-size: cover; background-repeat: no-repeat;">
+    <body style="background-image: url('https://app.adelgacenatural.com/img/backgrounds/background1.jpg') ; background-position: center; background-size: cover; background-repeat: no-repeat;">
     <div class="layer"></div>
     <main class="page-center">
         <article class="sign-up">
