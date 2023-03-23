@@ -2,18 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\Contracts\Appointments\AppointmentRepositoryInterface;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    private AppointmentRepositoryInterface $appointmentRepository;
+
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(AppointmentRepositoryInterface $appointmentRepository)
     {
         $this->middleware('auth');
+        $this->appointmentRepository = $appointmentRepository;
     }
 
     /**
@@ -23,6 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $appointments = $this->appointmentRepository->getAllAppointmentsById();
+        return view('appointments.index', compact('appointments'));
     }
 }

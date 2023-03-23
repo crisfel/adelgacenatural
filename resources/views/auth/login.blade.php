@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elegant Dashboard | Sign In</title>
+        <title>Adelgace Naturalmente</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="/img/svg/logo.svg" type="image/x-icon">
         <!-- Custom styles -->
@@ -17,9 +17,14 @@
     <div class="layer"></div>
     <main class="page-center">
         <article class="sign-up">
+            <!--
             <h1 class="sign-up__title">Welcome back!</h1>
             <p class="sign-up__subtitle">Sign in to your account to continue</p>
-    <form method="POST" action="{{ route('login') }}">
+            -->
+            <div class="mb-4">
+                <img width="600%" src="https://app.adelgacenatural.com/img/logo-login.png">
+            </div>
+            <form method="POST" action="{{ route('login') }}">
         @csrf
         <label class="form-label-wrapper">
             <p class="form-label text-info">Email</p>
@@ -30,9 +35,9 @@
             <input class="form-input" type="password" name="password" placeholder="Ingrese su contraseña" required>
         </label>
         @if (Route::has('password.request'))
-            <a class="link-info forget-link" href="{{ route('password.request') }}">¿Olvidaste tu contraseña?</a>
+            <!--<a class="link-info forget-link" href="{{ route('password.request') }}">¿Olvidaste tu contraseña?</a>-->
         @endif
-        <button class="form-btn primary-default-btn transparent-btn">Sign in</button>
+        <button class="form-btn primary-default-btn transparent-btn">Ingresar</button>
     </form>
         </article>
     </main>
