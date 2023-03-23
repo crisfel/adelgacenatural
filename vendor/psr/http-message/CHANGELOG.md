@@ -34,3 +34,4 @@ All notable changes to this project will be documented in this file, in reverse 
 ## 1.0.0 - 2016-05-18
 
 Initial stable release; reflects accepted PSR-7 specification.
+
