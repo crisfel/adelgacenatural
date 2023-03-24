@@ -22,13 +22,15 @@ class GetQuantitiesAndDatesUseCase implements GetQuantitiesAndDatesUseCaseInterf
             unset($records[0]['age'], $records[0]['id'], $records[0]['last_food'], $records[0]['recommendations'], $records[0]['recommendations'],
                 $records[0]['news'], $records[0]['user_id'], $records[0]['updated_at'], $records[0]['detox'], $records[0]['oximetry_level']);
         }
+
         $quantities = array();
         $categories = array();
         $htmlContainers = '';
+        $dates = array();
+
         if (isset($records[0])) {
             foreach ($records[0]->toArray() as $key => $value) {
                 $auxArray = array();
-                $dates = array();
                 array_push($categories, $key);
                 $htmlContainers .= '<div class="col-sm-10 col-md-10 col-lg-10 ms-auto me-auto rounded chart-container mb-4" style="display: none; overflow-x: scroll;"
                                         id="container' . $key . '"></div>';
@@ -47,11 +49,12 @@ class GetQuantitiesAndDatesUseCase implements GetQuantitiesAndDatesUseCaseInterf
                 array_push($quantities, $auxArray);
             }
 
-
             if (count($dates) > 100) {
                 $dates = array_slice($dates, -100);
             }
+
         }
+
         if (! isset($records[0])) {
             $dates = array();
         }
