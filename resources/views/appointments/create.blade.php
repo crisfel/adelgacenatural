@@ -6,7 +6,7 @@
                 <div class="card my-4">
                     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                         <div class="bg-success bg-gradient shadow-primary rounded-bottom p-1">
-                            <h6 class="text-white text-center text-capitalize ps-2 mx-6"><a href="" class="btn btn-block"><i style="color: white; margin-top: 13px;" class="material-icons opacity-10">keyboard_return</i></a>Solicitar cita</h6>
+                            <h6 class="text-white text-center text-capitalize ps-2 mx-6"><a href="{{route('appointments.index')}}" class="btn btn-block"><i style="color: white; margin-top: 13px;" class="material-icons opacity-10">keyboard_return</i></a>Solicitar cita</h6>
                         </div>
                     </div>
                     <div class="card-body px-0 pb-2">

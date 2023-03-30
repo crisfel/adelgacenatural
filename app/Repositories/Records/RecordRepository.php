@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Records;
 
-use App\Models\record;
+use App\Models\Record;
 use App\Repositories\Contracts\Records\RecordRepositoryInterface;
 use GuzzleHttp\Client;
 use Illuminate\Http\UploadedFile;
